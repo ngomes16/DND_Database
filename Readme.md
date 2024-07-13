@@ -1,29 +1,27 @@
-# Q-Team106-SFPA: RailRoad
-This is a template for CS411 project repository. Please make sure that 
-your title follows the convention: Q-[TeamID]-[YourTeamName]. All TeamID 
-should have a three digit coding (i.e. if you are team 20, you should have 
-`team020` as your ID.). You should also make sure that your url for this 
-repository is [fa22-cs411-Q-team000-teamname.git] so TAs can correctly 
-clone your repository and keep them up-to-date.
+# Railroad
 
-Once you setup your project, please remember to submit your team formation 
-to the team form.
+## Summary
 
-## Permission
-You should make sure you allow TAs to access your repository. You can add 
-TA(s) as a collaborator to your repository.
+Railroad is a web application tool for Dungeons and Dragons campaign creation and management. As D&D games involve hidden information being revealed to players by events that occur in the game, campaign creators (aka the dungeon master, or DM) write detailed descriptions for things like locations, characters, and items which have individual facts about them that are hidden from the players until the dungeon master chooses to make the information known. In most games, players wind up having to take their own notes on what is revealed to them, making for redundant effort for each player. Railroad is a tool to allow DMs to store all their notes in one places and share facts about the world they've built with players in a few simple clicks, and to enable them to reveal each fact individually without sharing its entire containing document.
 
-## Preparing for your release
-Eash submission should be in it's own 
-[release](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases). 
-Release are specific freezes to your repository. You should submit your 
-commit hash on canvas or google sheet. When tagging your stage, please use 
-the tag `stage.x` where x is the number to represent the stage.
+## Description
 
-## Keeping things up-to-date
-You should make sure you keep your project root files up-to-date. 
-Information for each file/folders are explained.
+Users join workspaces called Campaigns, create top-level documents called Artifacts, capable of containing one or more Facts, which are individual sections containing pieces of information. Each Fact and Artifact has a visibility key, which can be given to other users by the creating user to allow them to view the item. Facts meant to be shared together can be grouped together under a common key, or attached to the key of their parent Artifact if they are meant to be visible the moment an Artifact is shared.
 
-## Code Contribution
-Individual code contribution will be used to evaluate individual 
-contribution to the project.
+## Usefulness
+
+Dungeons and Dragons is a globally beloved game with a variety of web tools built for various aspects of the game, but notes sharing is largely left to the physical medium, or sharing individual files via direct communication. Our web application will allow dungeon masters and players to create accounts and easily manage multiple campaigns. DMs can store all of their writing in one central place from which it is easy to share, and can format their documents to share relevant sections only to their players, making it largely useful to the game's community. 
+
+## Realness
+
+Our data will consist of Facts comprised of generated text content, and Users with generated personal data. Publicly available sample campaign data can also be used for our datasets.
+
+## Functionality
+
+Users join a campaign, created by their Game Master. All users in a campaign, including the GM, can create Artifact documents, and add Facts to each Artifact. Facts and Artifacts can then be shared with other users within the campaign, or made public to the whole campaign.
+
+For extended functionality, we would like to support media like images and music, and theory/comment systems for players to be able to annotate Facts shared with them.
+
+## UI Mockup:
+
+![UI Mockup](https://user-images.githubusercontent.com/78306706/192434694-8a387cba-166d-4624-a4b2-3533e5641f6f.png)
